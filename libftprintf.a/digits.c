@@ -6,12 +6,11 @@
 /*   By: pitran <pitran@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 16:23:06 by pitran            #+#    #+#             */
-/*   Updated: 2024/10/29 15:16:15 by pitran           ###   ########.fr       */
+/*   Updated: 2024/10/29 15:47:45 by pitran           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
-#include <limits.h>
 
 int	printdigit(long long nb, int base)
 {

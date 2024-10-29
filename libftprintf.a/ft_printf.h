@@ -6,7 +6,7 @@
 /*   By: pitran <pitran@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 14:06:52 by pitran            #+#    #+#             */
-/*   Updated: 2024/10/29 15:15:56 by pitran           ###   ########.fr       */
+/*   Updated: 2024/10/29 15:48:37 by pitran           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 # include <unistd.h>
 # include <stdarg.h>
+# include <limits.h>
 
 int	printchar(int c);
 int	printstr(char *str);
