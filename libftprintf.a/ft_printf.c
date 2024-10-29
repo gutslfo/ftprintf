@@ -6,7 +6,7 @@
 /*   By: pitran <pitran@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 14:34:22 by pitran            #+#    #+#             */
-/*   Updated: 2024/10/29 15:48:00 by pitran           ###   ########.fr       */
+/*   Updated: 2024/10/29 16:06:41 by pitran           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,5 +51,6 @@ int	ft_printf(const char *format, ...)
 			count += (write(1, format, 1));
 		format++;
 	}
+	va_end (ap);
 	return (count);
 }
