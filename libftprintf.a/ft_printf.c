@@ -6,7 +6,7 @@
 /*   By: pitran <pitran@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 14:34:22 by pitran            #+#    #+#             */
-/*   Updated: 2024/10/25 17:33:45 by pitran           ###   ########.fr       */
+/*   Updated: 2024/10/29 15:14:50 by pitran           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,10 +22,7 @@ int	printformat(char specifier, va_list ap)
 	else if (specifier == 's')
 		count += printstr(va_arg(ap, char *));
 	else if (specifier == 'p')
-	{
-		count += printstr("0x");
-		count += printdigit(va_arg(ap, unsigned long long), 16);
-	}
+		count += printptr(va_arg(ap, unsigned long long));
 	else if ((specifier == 'd') || (specifier == 'i'))
 		count += printdigit(va_arg(ap, int), 10);
 	else if (specifier == 'u')
